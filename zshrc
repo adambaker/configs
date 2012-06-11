@@ -31,3 +31,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 [[ -s "/usr/share/ruby-rvm/scripts/rvm" ]] && . "/usr/share/ruby-rvm/scripts/rvm" 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
