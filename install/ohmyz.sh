@@ -9,13 +9,18 @@ install_path=$(dirname "$PWD/$0")
 cd
 wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 if [ -e .zshrc ]; then
-  if [ -f .zshrc ]; then 
-    echo 'Backing up .zshrc as .zshrc.old';
-    mv .zshrc .zshrc.old
+  if [ -h .zshrc ]; then
+    echo 'Deleting .zshrc link.';
+    rm .zshrc
   else
-    echo '.zshrc is not a normal file. Remove it or back it up and re-run'
-    exit 1;
+    if [ -f .zshrc ]; then 
+      echo 'Backing up .zshrc as .zshrc.old';
+      mv .zshrc .zshrc.old
+    else
+      echo '.zshrc is not a normal file. Remove it or back it up and re-run'
+      exit 1;
+    fi
   fi
-  ln -s "$install_path/../zshrc" .zshrc
 fi
+ln -s "$install_path/../zshrc" .zshrc
 cd $old_dir
