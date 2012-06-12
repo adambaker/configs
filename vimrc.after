@@ -1,4 +1,5 @@
 set t_Co=256
+colorscheme solarized
 
 noremap c k
 noremap t j
