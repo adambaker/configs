@@ -2,7 +2,7 @@
 install_path=$(dirname "$PWD/$0")
 source "$install_path/helper.sh";
 
-for prereq in vomit curl rake
+for prereq in curl rake
 do
   if [ -z `which $prereq` ]; then 
     echo "You must install $prereq first."
@@ -18,7 +18,7 @@ for fn in vimrc.after vimrc.before
 do
   link_config $fn $install_path
 done
- 
+
 echo 'adding bufkill plugin'
 mkdir .janus
 cd .janus
