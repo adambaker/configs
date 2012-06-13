@@ -23,3 +23,5 @@ vnoremap s s
 noremap <leader>f :CtrlP<CR>
 noremap <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_max_height = 30
+
+set wrap
