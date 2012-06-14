@@ -1,3 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set t_Co=256
 colorscheme solarized
 
@@ -25,3 +28,7 @@ noremap <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_max_height = 30
 
 set wrap
+
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
