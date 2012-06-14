@@ -19,9 +19,9 @@
 [submodule "vim/bundle/bufkill"]
 	path = vim/bundle/bufkill
 	url = git://github.com/vim-scripts/bufkill.vim.git
-[submodule "vim/bundle/colors/solarized"]
-	path = vim/bundle/colors/solarized
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/colors/github"]
-	path = vim/bundle/colors/github
+[submodule "vim/bundle/vim-color-github"]
+	path = vim/bundle/vim-color-github
 	url = git://github.com/telamon/vim-color-github.git

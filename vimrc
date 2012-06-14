@@ -1,5 +1,6 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+call pathogen#infect('bundle/colors')
 
 set t_Co=256
 colorscheme solarized
@@ -23,8 +24,8 @@ nnoremap N <c-w>l
 
 vnoremap s s
 
-noremap <leader>f :CtrlP<CR>
-noremap <leader>b :CtrlPBuffer<CR>
+noremap ,f :CtrlP<CR>
+noremap ,b :CtrlPBuffer<CR>
 let g:ctrlp_max_height = 30
 
 set wrap
