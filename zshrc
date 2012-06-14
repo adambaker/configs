@@ -36,3 +36,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
+#put local customizations in .zshrc.local
+if [ -e "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
