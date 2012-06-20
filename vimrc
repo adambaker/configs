@@ -54,22 +54,10 @@ set listchars+=precedes:<         " The character to show in the last column whe
 nnoremap ,mo :set mouse=<cr>
 nnoremap ,ma :set mouse=a<cr>
 
-noremap c k
-noremap t j
-noremap n l
-
-noremap l n
-noremap L N
-
 nnoremap <S-LEFT>   <c-w>h
 nnoremap <S-UP>     <c-w>k
 nnoremap <S-DOWN>   <c-w>j
 nnoremap <S-RIGHT>  <c-w>l
-
-nnoremap H <c-w>h
-nnoremap C <c-w>k
-nnoremap T <c-w>j
-nnoremap N <c-w>l
 
 nnoremap <c-p> :bp<cr>
 nnoremap <c-n> :bn<cr>
