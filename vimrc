@@ -1,3 +1,5 @@
+let mapleader = ","
+
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#infect('bundle/colors')
@@ -51,8 +53,8 @@ set listchars+=extends:>          " The character to show in the last column whe
 set listchars+=precedes:<         " The character to show in the last column when wrap is
                                   " off and the line continues beyond the right of the screen
 
-nnoremap ,mo :set mouse=<cr>
-nnoremap ,ma :set mouse=a<cr>
+nnoremap <leader>mo :set mouse=<cr>
+nnoremap <leader>ma :set mouse=a<cr>
 
 nnoremap <S-LEFT>   <c-w>h
 nnoremap <S-UP>     <c-w>k
@@ -66,9 +68,12 @@ nnoremap <c-l> <c-w>l
 nnoremap <c-p> :bp<cr>
 nnoremap <c-n> :bn<cr>
 
-noremap ,f :CtrlP<CR>
-noremap ,b :CtrlPBuffer<CR>
+noremap <leader>f :CtrlP<cr>
+noremap <leader>b :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 30
+
+noremap <leader>n :NERDTreeToggle<cr>
+" noremap <leader>c :NERDComToggleComment<cr>
 
 set wrap
 
