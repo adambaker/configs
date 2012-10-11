@@ -5,7 +5,7 @@ function link_config {
       echo "Deleting .$fn link.";
       rm ".$fn"
     else
-      if [ -f .zshrc ]; then 
+      if [ -f ".$fn" ]; then
         echo "Backing up .$fn as .$fn.old";
         mv ".$fn" ".$fn.old"
       else
