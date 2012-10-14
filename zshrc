@@ -30,12 +30,14 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
-[[ -s "/usr/share/ruby-rvm/scripts/rvm" ]] && . "/usr/share/ruby-rvm/scripts/rvm" 
+[[ -s "/usr/share/ruby-rvm/scripts/rvm" ]] && . "/usr/share/ruby-rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
+alias t='TERM=screen-256color-bce tmux -u'
 
 #put local customizations in .zshrc.local
 if [ -e "$HOME/.zshrc.local" ]; then
