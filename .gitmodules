@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-color-github"]
 	path = vim/bundle/vim-color-github
 	url = https://github.com/telamon/vim-color-github.git
+[submodule "vim/bundle/vim-ls"]
+	path = vim/bundle/vim-ls
+	url = git://github.com/gkz/vim-ls.git
