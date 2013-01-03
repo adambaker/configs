@@ -37,6 +37,7 @@ bindkey '^R' history-incremental-search-backward
 
 alias t='TERM=screen-256color-bce tmux -u'
 
+unsetopt correct_all
 #put local customizations in .zshrc.local
 if [ -e "$HOME/.zshrc.local" ]; then
   source "$HOME/.zshrc.local"
