@@ -5,3 +5,5 @@
 	ui = true
 [core]
 	excludesfile = /home/adam/.gitignore
+[push]
+	default = simple
