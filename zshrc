@@ -23,7 +23,13 @@ ZSH_THEME="kphoen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3)
+plugins=(git rails3 rbenv heroku npm node)
+
+#put local customizations in .zshrc.local
+if [ -e "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
+#do this before loading oh-my-zsh so .zshrc.local can add plugins
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,7 +45,3 @@ bindkey '^R' history-incremental-search-backward
 alias t='TERM=screen-256color-bce tmux -u'
 
 unsetopt correct_all
-#put local customizations in .zshrc.local
-if [ -e "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
-fi
