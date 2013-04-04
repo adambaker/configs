@@ -65,7 +65,7 @@ noremap <c-k> <c-w>k
 noremap <c-j> <c-w>j
 noremap <c-l> <c-w>l
 
-nnoremap <c-p> :bp<cr>
+nnoremap <c-b> :bp<cr>
 nnoremap <c-n> :bn<cr>
 
 noremap <leader>f :CtrlP<cr>
