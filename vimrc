@@ -56,6 +56,9 @@ set listchars+=precedes:<         " The character to show in the last column whe
 nnoremap <leader>mo :set mouse=<cr>
 nnoremap <leader>ma :set mouse=a<cr>
 
+" Kill the damned Ex mode.
+nnoremap Q <nop>
+
 noremap <S-LEFT>   <c-w>h
 noremap <S-UP>     <c-w>k
 noremap <S-DOWN>   <c-w>j
