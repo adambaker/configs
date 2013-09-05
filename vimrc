@@ -80,6 +80,11 @@ let NERDTreeWinSize = 23
 
 set wrap
 
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](components|node_modules|.git)$',
+  \ 'file': '\v\..+\.sw.?$',
+  \ }
+
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
