@@ -1,1 +1,1 @@
-sudo apt-get install zsh git vim vim-gtk tmux rxvt-unicode
+sudo apt-get install zsh git vim vim-gtk tmux rxvt-unicode ttf-inconsolata
