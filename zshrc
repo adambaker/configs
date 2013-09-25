@@ -46,3 +46,6 @@ bindkey '^R' history-incremental-search-backward
 alias t='TERM=screen-256color-bce tmux -u'
 
 unsetopt correct_all
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
