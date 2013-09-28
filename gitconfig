@@ -9,3 +9,5 @@
 	default = simple
 [push]
   default = current
+[credential]
+	helper = cache --timeout=86400
