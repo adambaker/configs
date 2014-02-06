@@ -6,6 +6,7 @@ call pathogen#infect('bundle/colors')
 
 set t_Co=256
 colorscheme solarized
+set background=light
 
 "set vb t_vb=
 
