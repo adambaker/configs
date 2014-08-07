@@ -76,6 +76,16 @@ noremap <leader>f :CtrlP<cr>
 noremap <leader>b :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 30
 
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set colorcolumn=80
+    autocmd WinLeave * set colorcolumn=0
+augroup ENDaugroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set colorcolumn=80
+    autocmd WinLeave * set colorcolumn=0
+augroup END
+
 noremap <leader>n :NERDTreeToggle<cr>
 let NERDTreeWinSize = 23
 
