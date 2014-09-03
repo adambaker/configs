@@ -5,6 +5,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [pull]
 	default = simple
 [push]
