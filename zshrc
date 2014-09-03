@@ -48,3 +48,4 @@ bindkey '^R' history-incremental-search-backward
 alias t='TERM=screen-256color-bce tmux -u'
 
 unsetopt correct_all
+stty -ixon
