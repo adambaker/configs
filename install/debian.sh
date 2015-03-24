@@ -1,1 +1,1 @@
-sudo apt-get install zsh vim vim-gtk tmux rxvt-unicode ttf-inconsolata postgresql pgadmin3
+sudo apt-get install zsh vim vim-gtk tmux rxvt-unicode fonts-inconsolata postgresql pgadmin3
