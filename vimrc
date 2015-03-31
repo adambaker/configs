@@ -156,6 +156,13 @@ if &term =~ '256color'
   set t_ut=
 endif
 
+" color column 80
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set colorcolumn=80
+    autocmd WinLeave * set colorcolumn=0
+augroup END
+
 " Force redraw
 map <silent> <leader>r :redraw!<CR>
 
