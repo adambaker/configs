@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="bold_color_same_as_fg" mtime="1427862198" type="bool" value="false"/>
+	<entry name="font" mtime="1427862187" type="string">
+		<stringvalue>Ubuntu Mono 11</stringvalue>
+	</entry>
+	<entry name="use_system_font" mtime="1427862187" type="bool" value="false"/>
+	<entry name="scrollbar_position" mtime="1427862187" type="string">
+		<stringvalue>hidden</stringvalue>
+	</entry>
+	<entry name="use_theme_colors" mtime="1427862187" type="bool" value="false"/>
+	<entry name="silent_bell" mtime="1427862187" type="bool" value="true"/>
+	<entry name="default_show_menubar" mtime="1427862187" type="bool" value="false"/>
+	<entry name="background_darkness" mtime="1427862187" type="float" value="0.87999999523162842"/>
+	<entry name="background_type" mtime="1427862187" type="string">
+		<stringvalue>transparent</stringvalue>
+	</entry>
+	<entry name="use_theme_background" mtime="1424038737" type="bool" value="false"/>
+	<entry name="scrollback_lines" mtime="1427862187" type="int" value="51200"/>
+	<entry name="palette" mtime="1427862187" type="string">
+		<stringvalue>#2E2E34343636:#CCCC66666666:#B5B5BDBD6868:#997E82B01D57:#8A8ABEBEB7B7:#B2B29494BBBB:#14F3836D854C:#88888A8A8585:#555557575353:#DEDE93935F5E:#B5B5BDBD6868:#FCFCE9E94F4F:#8181A2A2BEBE:#ADAD7F7FA8A8:#2DC3986E986E:#C5C5C8C8C9C9</stringvalue>
+	</entry>
+	<entry name="alternate_screen_scroll" mtime="1427862187" type="bool" value="true"/>
+	<entry name="background_color" mtime="1427862187" type="string">
+		<stringvalue>#3F3F3F3F3F3F</stringvalue>
+	</entry>
+	<entry name="visible_name" mtime="1427862187" type="string">
+		<stringvalue>Default</stringvalue>
+	</entry>
+	<entry name="bold_color" mtime="1427862204" type="string">
+		<stringvalue>#C5C5C8C8C9C9</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1427862187" type="string">
+		<stringvalue>#C5C5C8C8C9C9</stringvalue>
+	</entry>
+</gconf>
