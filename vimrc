@@ -86,6 +86,7 @@ Bundle 'Twinside/vim-hoogle'
 
 " Color
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'adambaker/tomorrow-evening'
 
 " Custom bundles
 if filereadable(expand("~/.vim.local/bundles.vim"))
