@@ -180,7 +180,7 @@ set mouse=a
 " Colors and Fonts {{{
 
 try
-  colorscheme solarized
+  colorscheme tomorrow-evening
 catch
 endtry
 
