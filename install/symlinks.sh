@@ -4,6 +4,7 @@ source "$install_path/helper.sh";
 
 old_dir=$PWD
 cd
+link_config zshenv $install_path
 link_config gitignore $install_path
 link_config gitconfig $install_path
 link_config vimrc $install_path
