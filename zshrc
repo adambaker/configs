@@ -31,14 +31,12 @@ if [ -e "$HOME/.zshrc.local" ]; then
 fi
 #do this before loading oh-my-zsh so .zshrc.local can add plugins
 
-export PERL5LIB="$HOME/perl5/lib/perl5:$PERL5LIB"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$HOME/.cabal/bin:$PATH"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
@@ -47,6 +45,3 @@ alias t='TERM=screen-256color-bce tmux -u'
 
 unsetopt correct_all
 stty -ixon
-
-PERL_MB_OPT="--install_base \"/home/adam/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/adam/perl5"; export PERL_MM_OPT;
