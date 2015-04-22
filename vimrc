@@ -94,9 +94,6 @@ endif
 
 " VIM user interface {{{
 
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
-
 " Turn on the WiLd menu
 set wildmenu
 " Tab-complete files up to longest unambiguous prefix
@@ -221,17 +218,9 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-" Use large font by default in MacVim
-set gfn=Monaco:h19
-
 " }}}
 
 " Files, backups and undo {{{
-
-" Turn backup off, since most stuff is in Git anyway...
-set nobackup
-set nowb
-set noswapfile
 
 " Source the vimrc file after saving it
 augroup sourcing
@@ -273,10 +262,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-
-" Pretty unicode haskell symbols
-let g:haskell_conceal_wide = 1
-let g:haskell_conceal_enumerations = 1
 
 " }}}
 
