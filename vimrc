@@ -44,46 +44,46 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Support bundles
-Bundle 'jgdavey/tslime.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'moll/vim-bbye'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'vim-scripts/gitignore'
+Plugin 'jgdavey/tslime.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'moll/vim-bbye'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/gitignore'
 
 " Git
-Bundle 'tpope/vim-fugitive'
-Bundle 'int3/vim-extradite'
+Plugin 'tpope/vim-fugitive'
+Plugin 'int3/vim-extradite'
 
 " Bars, panels, and files
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
 
 " Text manipulation
-Bundle 'vim-scripts/Align'
-Bundle 'vim-scripts/Gundo'
-Bundle 'tpope/vim-commentary'
-Bundle 'godlygeek/tabular'
-Bundle 'michaeljsmith/vim-indent-object'
+Plugin 'vim-scripts/Align'
+Plugin 'vim-scripts/Gundo'
+Plugin 'tpope/vim-commentary'
+Plugin 'godlygeek/tabular'
+Plugin 'michaeljsmith/vim-indent-object'
 
 " Allow pane movement to jump out of vim into tmux
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Haskell
-Bundle 'raichoo/haskell-vim'
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'eagletmt/neco-ghc'
-Bundle 'Twinside/vim-hoogle'
+Plugin 'raichoo/haskell-vim'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'Twinside/vim-hoogle'
 
 " Color
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'adambaker/tomorrow-evening'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'adambaker/tomorrow-evening'
 
 " Custom bundles
 if filereadable(expand("~/.vim.local/bundles.vim"))
