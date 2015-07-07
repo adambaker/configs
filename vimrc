@@ -94,6 +94,12 @@ endif
 
 " VIM user interface {{{
 
+" supress some of the less helpful status bar info
+let g:airline#extensions#default#layout = [
+    \ [ 'a', 'b', 'c' ],
+    \ [ 'z', 'warning' ]
+    \ ]
+
 " Turn on the WiLd menu
 set wildmenu
 " Tab-complete files up to longest unambiguous prefix
