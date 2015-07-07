@@ -39,7 +39,7 @@ nnoremap Q <nop>
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -86,8 +86,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'adambaker/tomorrow-evening'
 
 " Custom bundles
-if filereadable(expand("~/.vim.local/bundles.vim"))
-  source ~/.vim.local/bundles.vim
+if filereadable(expand("~/.bundles.vim"))
+  source ~/.bundles.vim
 endif
 
 " }}}
