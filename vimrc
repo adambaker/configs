@@ -68,14 +68,11 @@ Plugin 'majutsushi/tagbar'
 " Text manipulation
 Plugin 'vim-scripts/Gundo'
 Plugin 'tpope/vim-commentary'
-Plugin 'godlygeek/tabular'
-Plugin 'michaeljsmith/vim-indent-object'
 
 " Allow pane movement to jump out of vim into tmux
 Plugin 'christoomey/vim-tmux-navigator'
 
 " Haskell
-Plugin 'raichoo/haskell-vim'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'Twinside/vim-hoogle'
@@ -92,6 +89,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'adambaker/tomorrow-evening'
 
+Plugin 'digitaltoad/vim-jade'
 " Custom bundles
 if filereadable(expand("~/.bundles.vim"))
   source ~/.bundles.vim
