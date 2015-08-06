@@ -81,6 +81,11 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'Twinside/vim-hoogle'
 
+" Clojure
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-sexp'
+Plugin 'kien/rainbow_parentheses.vim'
+
 " Color
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'adambaker/tomorrow-evening'
