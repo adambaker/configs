@@ -66,7 +66,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 
 " Text manipulation
-Plugin 'vim-scripts/Align'
 Plugin 'vim-scripts/Gundo'
 Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
@@ -174,12 +173,12 @@ map <silent> <leader>r :redraw!<CR>
 
 " Turn mouse mode on
 nnoremap <leader>ma :set mouse=a<cr>
-
 " Turn mouse mode off
 nnoremap <leader>mo :set mouse=<cr>
-
 " Default to mouse mode on
 set mouse=a
+
+nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 " }}}
 
 " Colors and Fonts {{{
@@ -352,29 +351,6 @@ set laststatus=2
 
 " }}}
 
-" Editing mappings {{{
-
-" Delete trailing white space on save
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-
-augroup whitespace
-  autocmd!
-  autocmd BufWrite *.hs :call DeleteTrailingWS()
-augroup END
-
-" }}}
-
-" Spell checking {{{
-
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" }}}
-
 " Helper functions {{{
 
 function! CmdLine(str)
@@ -419,39 +395,8 @@ nmap <silent> <Leader>rv <Plug>SetTmuxVars
 " Close nerdtree after a file is selected
 let NERDTreeQuitOnOpen = 1
 
-function! IsNERDTreeOpen()
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
-
-function! ToggleFindNerd()
-  if IsNERDTreeOpen()
-    exec ':NERDTreeToggle'
-  else
-    exec ':NERDTreeFind'
-  endif
-endfunction
-
 " If nerd tree is closed, find current file, if open, close it
-nmap <silent> <leader>f <ESC>:call ToggleFindNerd()<CR>
-nmap <silent> <leader>F <ESC>:NERDTreeToggle<CR>
-
-" }}}
-
-" Alignment {{{
-
-" Stop Align plugin from forcing its mappings on us
-let g:loaded_AlignMapsPlugin=1
-" Align on equal signs
-map <Leader>a= :Align =<CR>
-" Align on commas
-map <Leader>a, :Align ,<CR>
-" Align on pipes
-map <Leader>a<bar> :Align <bar><CR>
-" Prompt for align character
-map <leader>ap :Align
-
-" Enable some tabular presets for Haskell
-let g:haskell_tabular = 1
+nmap <silent> <leader>f <ESC>:NERDTreeToggle<CR>
 
 " }}}
 
