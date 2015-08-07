@@ -82,6 +82,9 @@ Plugin 'Twinside/vim-hoogle'
 
 " Clojure
 Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
+Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
 Plugin 'kien/rainbow_parentheses.vim'
 
@@ -179,6 +182,8 @@ nnoremap <leader>mo :set mouse=<cr>
 set mouse=a
 
 nnoremap <leader>rp :RainbowParenthesesToggle<cr>
+" Evaluate Clojure buffers on load
+autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
 " }}}
 
 " Colors and Fonts {{{
