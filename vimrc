@@ -1,4 +1,4 @@
-" General {{{
+" General
 
 " use indentation for folds
 set foldmethod=indent
@@ -33,9 +33,7 @@ let $PATH = $PATH . ':' . expand("~/.haskell-vim-now/bin")
 " Kill the damned Ex mode.
 nnoremap Q <nop>
 
-" }}}
-
-" Vundle {{{
+" Vundle
 
 set nocompatible
 filetype off
@@ -83,7 +81,7 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-salve'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'luochen1990/rainbow'
 
 " Color
 Plugin 'altercation/vim-colors-solarized'
@@ -179,12 +177,11 @@ nnoremap <leader>mo :set mouse=<cr>
 " Default to mouse mode on
 set mouse=a
 
-nnoremap <leader>rp :RainbowParenthesesToggle<cr>
+let g:rainbow_active = 1
 " Evaluate Clojure buffers on load
 autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
-" }}}
 
-" Colors and Fonts {{{
+" Colors and Fonts
 
 try
   colorscheme tomorrow-evening
@@ -560,10 +557,8 @@ vnoremap <silent> <leader>h> :call Pointful()<CR>
 
 " }}}
 
-" Customization {{{
+" Customization
 
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
-" }}}
