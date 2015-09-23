@@ -23,7 +23,7 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras bower cabal heroku npm sudo)
+plugins=(git git-extras lein cabal heroku npm sudo)
 
 #put local customizations in .zshrc.local
 if [ -e "$HOME/.zshrc.local" ]; then
