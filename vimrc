@@ -83,6 +83,9 @@ Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
 Plugin 'luochen1990/rainbow'
 
+" Other languages
+Plugin 'vim-scripts/sql.vim--Stinson'
+
 " Color
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'adambaker/tomorrow-evening'
