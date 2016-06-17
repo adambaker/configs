@@ -2,7 +2,7 @@
 
 " use indentation for folds
 set foldmethod=indent
-set foldnestmax=5
+set foldnestmax=50
 set foldlevelstart=99
 set foldcolumn=0
 
@@ -77,8 +77,6 @@ Plugin 'Twinside/vim-hoogle'
 
 " Clojure
 Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-salve'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
 Plugin 'luochen1990/rainbow'
