@@ -80,6 +80,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
 Plugin 'luochen1990/rainbow'
+Plugin 'gberenfield/cljfold.vim'
 
 " Other languages
 Plugin 'vim-scripts/sql.vim--Stinson'
@@ -178,6 +179,7 @@ nnoremap <leader>mo :set mouse=<cr>
 " Default to mouse mode on
 set mouse=a
 
+let g:clojure_foldwords = "def,ns,GET,POST,PUT,DELETE,PATCH"
 let g:rainbow_active = 1
 " Evaluate Clojure buffers on load
 autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
