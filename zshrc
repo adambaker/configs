@@ -24,19 +24,13 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras lein cabal heroku npm sudo)
+plugins=(git git-extras lein cabal npm sudo)
 
-#put local customizations in .zshrc.local
-if [ -e "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
-fi
 #do this before loading oh-my-zsh so .zshrc.local can add plugins
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export PATH="$HOME/bin:$PATH"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
@@ -49,3 +43,10 @@ export VISUAL=/usr/bin/nvim
 
 unsetopt correct_all
 stty -ixon
+
+export PATH=$HOME/bin:${PATH}
+
+#put local customizations in .zshrc.local
+if [ -e "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
