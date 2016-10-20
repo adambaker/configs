@@ -85,6 +85,7 @@ Plugin 'gberenfield/cljfold.vim'
 " Other languages
 Plugin 'vim-scripts/sql.vim--Stinson'
 Plugin 'tpope/vim-markdown'
+Plugin 'lambdatoast/elm.vim'
 
 " Color
 Plugin 'altercation/vim-colors-solarized'
