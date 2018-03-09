@@ -32,10 +32,6 @@ nnoremap Q <nop>
 
 call plug#begin("~/.vim/plugged")
 
-" let Vundle manage Vundle
-" required!
-Plug 'gmarik/Vundle.vim'
-
 " Support bundles
 Plug 'jgdavey/tslime.vim'
 Plug 'Shougo/vimproc.vim'
