@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
