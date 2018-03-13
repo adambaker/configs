@@ -41,6 +41,10 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 alias t='TERM=screen-256color-bce tmux -u'
+alias vim=nvim
+alias vi=nvim
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 
 unsetopt correct_all
 stty -ixon

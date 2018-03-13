@@ -33,64 +33,61 @@ let $PATH = $PATH . ':' . expand("~/.haskell-vim-now/bin")
 " Kill the damned Ex mode.
 nnoremap Q <nop>
 
-" Vundle
-
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call plug#begin("~/.vim/plugged")
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
 " Support bundles
-Plugin 'jgdavey/tslime.vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'moll/vim-bbye'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'vim-scripts/gitignore'
+Plug 'jgdavey/tslime.vim'
+Plug 'Shougo/vimproc.vim'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/syntastic'
+Plug 'moll/vim-bbye'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'vim-scripts/gitignore'
 
 " Git
-Plugin 'tpope/vim-fugitive'
-Plugin 'int3/vim-extradite'
+Plug 'tpope/vim-fugitive'
+Plug 'int3/vim-extradite'
 
 " Bars, panels, and files
-Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 
 " Text manipulation
-Plugin 'vim-scripts/Gundo'
-Plugin 'tpope/vim-commentary'
+Plug 'vim-scripts/Gundo'
+Plug 'tpope/vim-commentary'
 
 " Allow pane movement to jump out of vim into tmux
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Clojure
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'guns/vim-sexp'
-Plugin 'luochen1990/rainbow'
-Plugin 'gberenfield/cljfold.vim'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+Plug 'guns/vim-sexp'
+Plug 'luochen1990/rainbow'
+Plug 'gberenfield/cljfold.vim'
 
 " Other languages
-Plugin 'vim-scripts/sql.vim--Stinson'
-Plugin 'tpope/vim-markdown'
-Plugin 'lambdatoast/elm.vim'
+Plug 'vim-scripts/sql.vim--Stinson'
+Plug 'tpope/vim-markdown'
+Plug 'lambdatoast/elm.vim'
 
 " Color
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'adambaker/tomorrow-evening'
+Plug 'altercation/vim-colors-solarized'
+Plug 'adambaker/tomorrow-evening'
+Plug 'derekwyatt/vim-scala'
 
-Plugin 'digitaltoad/vim-jade'
+Plug 'digitaltoad/vim-jade'
 " Custom bundles
 if filereadable(expand("~/.bundles.vim"))
   source ~/.bundles.vim
 endif
+call plug#end()
 
 " }}}
 
