@@ -1,3 +1,4 @@
+source /etc/environment
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 

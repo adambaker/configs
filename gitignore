@@ -1,1 +1,6 @@
 *.sw?
+
+.ensime
+.ensime_cache
+local.sbt
+project/.ensime
