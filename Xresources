@@ -1,0 +1,72 @@
+!!-------------------------------------------------------------------------------
+!! Xft settings
+!!-------------------------------------------------------------------------------
+
+!Xft.dpi:                    96
+!Xft.antialias:              false
+!Xft.rgba:                   rgb
+!Xft.hinting:                true
+!Xft.hintstyle:              hintslight
+
+
+rxvt.scrollstyle: xterm
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            5000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold: true
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+URxvt*font: xft:Ubuntu Mono:size=11:antialias=true:hinting=true
+URxvt*boldFont: xft:Ubuntu Mono:bold:size=11:antialias=true:hinting=true
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common: default,matcher,fullscreen,resize-font
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.keysym.F11: perl:fullscreen:switch
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+URxvt.depth: 32
+URxvt.background: [90]#3F3F3F
+URxvt.foreground:#C5C8C9
+URxvt.colorBD:#C5C8C9
+!URxvt.colorUL:#C5C8C9
+URxvt.color0:#2E3436
+URxvt.color1:#CC6666
+URxvt.color2:#B5BD68
+URxvt.color3:#99821D
+URxvt.color4:#8ABEB7
+URxvt.color5:#B294BB
+URxvt.color6:#158385
+URxvt.color7:#888A85
+!high-intensity colours
+URxvt.color8:#83897D
+URxvt.color9:#DE935F
+URxvt.color10:#B5BD68
+URxvt.color11:#FCE94F
+URxvt.color12:#8ABEB7
+URxvt.color13:#AD7FA8
+URxvt.color14:#2E9898
+URxvt.color15:#C5C8C9
