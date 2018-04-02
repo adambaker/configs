@@ -27,9 +27,6 @@ noremap ,, ,
 " Use par for prettier line formatting
 set formatprg="PARINIT='rTbgqR B=.,?_A_a Q=_s>|' par\ -w72"
 
-" Find custom built ghc-mod, codex etc
-let $PATH = $PATH . ':' . expand("~/.haskell-vim-now/bin")
-
 " Kill the damned Ex mode.
 nnoremap Q <nop>
 
@@ -72,6 +69,12 @@ Plug 'guns/vim-sexp'
 Plug 'luochen1990/rainbow'
 Plug 'gberenfield/cljfold.vim'
 
+" Scala
+Plug 'derekwyatt/vim-scala'
+if has('nvim')
+  Plug 'ensime/ensime-vim', { 'do': ':UpdateRemotePlugins' }
+endif
+
 " Other languages
 Plug 'vim-scripts/sql.vim--Stinson'
 Plug 'tpope/vim-markdown'
@@ -80,9 +83,7 @@ Plug 'lambdatoast/elm.vim'
 " Color
 Plug 'altercation/vim-colors-solarized'
 Plug 'adambaker/tomorrow-evening'
-Plug 'derekwyatt/vim-scala'
 
-Plug 'digitaltoad/vim-jade'
 " Custom bundles
 if filereadable(expand("~/.bundles.vim"))
   source ~/.bundles.vim
@@ -246,6 +247,14 @@ nnoremap <silent> <Leader><space> :CtrlP<CR>
 let g:ctrlp_max_files=0
 let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height = 30
+
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 " }}}
 

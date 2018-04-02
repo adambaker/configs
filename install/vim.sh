@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo pip install setuptools
 sudo pip install neovim websocket-client sexpdata
 sudo pip3 install setuptools
 sudo pip3 install neovim

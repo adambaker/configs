@@ -1,5 +1,3 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
-
-Plug 'ensime/ensime-vim', { 'do': ':UpdateRemotePlugins' }
