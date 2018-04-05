@@ -1,5 +1,8 @@
 *.sw?
 
+tags
+.tags
+
 .ensime
 .ensime_cache
 local.sbt
