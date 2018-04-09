@@ -10,4 +10,5 @@ link_config gitconfig $install_path
 link_config tmux.conf $install_path
 link_config Xresources $install_path
 link_config urxvt $install_path
+link_config sbt $install_path
 cd $old_dir
