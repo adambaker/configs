@@ -1,3 +1,4 @@
+/*
 libraryDependencies += {
   val version = scalaBinaryVersion.value match {
     case "2.10" => "1.0.3"
@@ -7,3 +8,4 @@ libraryDependencies += {
 }
 
 initialCommands in console := "ammonite.Main.main(Array())"
+*/

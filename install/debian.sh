@@ -6,4 +6,4 @@ sudo apt-get install zsh gtk-redshift tree neovim tmux silversearcher-ag \
   postgresql pgadmin3 libpq-dev \
   build-essential software-properties-common \
   libdbd-pg-perl cpanminus perl perl-doc \
-  python-software-properties python-dev python-pip python3-dev python3-pip
+  python-dev python-pip python3-dev python3-pip
