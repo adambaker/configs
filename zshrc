@@ -1,4 +1,3 @@
-source /etc/environment
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -24,9 +23,7 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras lein cabal npm sudo)
-
-#do this before loading oh-my-zsh so .zshrc.local can add plugins
+plugins=(git git-extras lein cabal npm sudo sbt docker terraform)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,15 +33,11 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 alias t='TERM=screen-256color-bce tmux -u'
-alias vim=nvim
-alias vi=nvim
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
+export EDITOR=`which vim`
+export VISUAL=`which vim`
 
 unsetopt correct_all
 stty -ixon
-
-export PATH=$HOME/bin:${PATH}
 
 #put local customizations in .zshrc.local
 if [ -e "$HOME/.zshrc.local" ]; then
