@@ -36,7 +36,7 @@ call plug#begin("~/.vim/plugged")
 Plug 'jgdavey/tslime.vim'
 Plug 'Shougo/vimproc.vim'
 Plug 'ervandew/supertab'
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'moll/vim-bbye'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-scripts/gitignore'
@@ -67,9 +67,6 @@ Plug 'gberenfield/cljfold.vim'
 
 " Scala
 Plug 'derekwyatt/vim-scala'
-if has('nvim')
-  Plug 'ensime/ensime-vim', { 'do': ':UpdateRemotePlugins' }
-endif
 
 " Other languages
 Plug 'vim-scripts/sql.vim--Stinson'
@@ -95,6 +92,11 @@ let g:airline#extensions#default#layout = [
     \ [ 'a', 'b', 'c' ],
     \ [ 'z', 'warning' ]
     \ ]
+let g:ale_python_auto_pipenv = 1
+let g:ale_linters = {
+    \ 'python': ['mypy', 'prospector']
+    \ }
+let g:ale_python_prospector_auto_pipenv = 1
 
 " Turn on the WiLd menu
 set wildmenu
@@ -299,11 +301,6 @@ noremap <c-l> <c-w>l
 " Disable highlight when <leader><cr> is pressed
 " but preserve cursor coloring
 nmap <silent> <leader><cr> :noh\|hi Cursor guibg=red<cr>
-augroup haskell
-  autocmd!
-  autocmd FileType haskell map <silent> <leader><cr> :noh<cr>:GhcModTypeClear<cr>:SyntasticReset<cr>
-  autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-augroup END
 
 " Return to last edit position when opening files (You want this!)
 augroup last_edit
@@ -435,6 +432,8 @@ endfunction
 
 " Show list of last-committed files
 nnoremap <silent> <leader>g? :call CommittedFiles()<CR>:copen<CR>
+
+autocmd BufNewFile,BufRead *.pyi set filetype=python
 
 " }}}
 
